@@ -1,0 +1,15 @@
+package deliveryservice.external;
+
+import javax.persistence.*;
+import java.util.List;
+import java.util.Date;
+import lombok.Data;
+
+@Data
+public class PayCommand {
+
+    @Id
+    private Long orderId;
+    private Double pay;
+    private String status;
+}
